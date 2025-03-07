@@ -1,0 +1,123 @@
+@use "../global" as g;
+
+/*!
+top > top-concept-select
+------------------------------
+*/
+.concept-select {
+    font-weight: 500;
+    padding-top: 60px;
+    width: 90%;
+    margin: 0 auto 120px;
+    text-align: center;
+
+    @include g.mq() {
+        padding-top: 130px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    img {
+        @include g.mq() {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.concept-container {
+    margin-bottom: 60px;
+
+    @include g.mq() {
+        display: flex;
+        gap: 56px;
+        margin-bottom: 100px;
+    }
+}
+.select-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include g.mq() {
+        flex-direction: row;
+        gap: 56px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.concept-container-left {
+    width: 100%;
+    margin-bottom: 32px;
+
+    @include g.mq() {
+        text-align: left;
+        margin-left: 100px;
+        max-width: 530px;
+    }
+}
+.select-container-right {
+    width: 100%;
+    margin-bottom: 32px;
+
+    @include g.mq() {
+        text-align: left;
+        margin-right: 100px;
+        max-width: 530px;
+    }
+}
+
+.concept-title {
+    font-size: 30px;
+    color: var(--color-font-primary);
+
+    @include g.mq() {
+        font-size: 63px;
+        margin-bottom: 10px;
+    }
+}
+.select-title {
+    @extend .concept-title;
+}
+
+
+.concept-title-ja  {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-font-brown);
+
+    @include g.mq() {
+        font-size: 31px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+}
+.select-title-ja {
+    @extend .concept-title-ja;
+}
+
+
+.concept-text {
+    margin-top: 22px;
+    font-weight: 300;
+    color: var(--color-font-grey);
+}
+.select-text {
+    @extend .concept-text;
+}
+.concept-text br {
+
+    @include g.mq() {
+        display: block;
+        content: "";
+        margin: 10px 0;
+    }
+}
+
+.space {
+    display: block;
+    content: "";
+    margin: 10px 0;
+}

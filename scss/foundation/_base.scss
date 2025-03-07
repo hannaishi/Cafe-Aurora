@@ -1,0 +1,26 @@
+@use "../global" as g;
+
+/*!
+foundation > base
+------------------------------
+*/
+body {
+    line-height: 1.8;
+    font-size: 14px;
+    color: var(--color-font-base);
+    font-family: var(--font-family-base);
+    background-image: url(../img/body_bg.png);
+    background-image: image-set(url(../img/body_bg.png) 1x, url(../img/body_bg.png) 2x);
+    background-image: -webkit-image-set(url(../img/body_bg.png) 1x, url(../img/body_bg.png) 2x);
+    background-position: center;
+    background-size: cover;
+
+    @include g.mq() {
+        font-size: 16px;
+        background-image: url(../img/body_bg.png);
+        background-image: image-set(url(../img/body_bg.png) 1x, url(../img/body_bg.png) 2x);
+        background-image: -webkit-image-set(url(../img/body_bg.png) 1x, url(../img/body_bg.png) 2x);
+        background-position: center;
+        background-size: cover;
+    }
+}

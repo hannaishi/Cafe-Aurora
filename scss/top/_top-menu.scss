@@ -1,0 +1,97 @@
+@use "../global" as g;
+
+/*!
+top > top-menu
+------------------------------
+*/
+
+.menu-title {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-font-primary);
+
+    @include g.mq() {
+        padding-top: 100px;
+        font-size: 63px;
+        line-height: 1;
+        margin: 0 0 15px;
+    }
+}
+
+.menu-title-ja  {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-font-brown);
+
+    @include g.mq() {
+        font-size: 31px;
+        line-height: 1.5;
+    }
+}
+
+.menu-item {
+    width: 90%;
+    background-color: var(--color-bg-white);
+    margin: 32px auto;
+    padding: 32px 53px;
+
+    @include g.mq() {
+        max-width: 1170px;
+        padding: 70px 100px;
+        margin: 30px auto;
+        display: flex;
+        gap: 72px;
+    }
+}
+.menu-list {
+    margin-bottom: 64px;
+
+    &:last-child {
+        margin-bottom: 32px;
+    }
+
+    @include g.mq() {
+        margin-bottom: 0;
+    }
+}
+
+.menu-list-title {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+
+    @include g.mq() {
+        font-size: 18px;
+        line-height: 1;
+        margin-top: 30px;
+    }
+}
+
+.menu-price {
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-font-red);
+    line-height: 1;
+
+    @include g.mq() {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+.menu-copy {
+    text-align: center;
+    font-size: 14px;
+
+    @include g.mq() {
+        line-height: 2;
+        margin-bottom: 100px;
+        color: var(--color-font-brown);
+    }
+
+    span {
+        display: block;
+    }
+}
